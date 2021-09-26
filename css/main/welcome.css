@@ -1,0 +1,125 @@
+.welcome {
+  position: relative;
+  height: 810px;
+}
+
+.welcome-block {
+  position: absolute;
+  top: 150px;
+  max-width: 598px;
+  max-height: 388px;
+  z-index: 3;
+}
+
+.welcome-block h2 {
+  margin: 0 0 25px 0;
+}
+
+.welcome-block p {
+  margin: 0 0 100px 0;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.welcome-block a {
+  padding: 24px 66.5px;
+  text-align: center;
+  line-height: 26px;
+  background: #710707;
+  border-radius: 10px;
+}
+
+.welcome-block a:hover {
+  background-color: #9d8665;
+}
+
+.welcome-slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  min-height: 100%;
+  background-image: url("../../assets/img/welcome-slider/1.jpg");
+  background-repeat: no-repeat;
+  background-position: calc(100%) calc(100% - 60px);
+}
+
+.welcome-slider_shadow {
+  background: none;
+  -webkit-box-shadow: inset 200px -50px 140px -60px #030303;
+          box-shadow: inset 200px -50px 140px -60px #030303;
+  z-index: 2;
+}
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 74px;
+  background-color: #030303;
+  max-width: 600px;
+  height: 120px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.slide .slide-count {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.slide .slide-change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 55px;
+}
+
+.slide .slide-change .slide-block {
+  width: 16px;
+  height: 16px;
+  margin: 0 12.5px;
+  background-color: #fff;
+}
+
+.slide .slide-change .slide-block:first-child {
+  margin-left: 0;
+}
+
+.slide .slide-change .sb-last {
+  margin-right: 0;
+}
+
+.slide .slide-change .slide-line {
+  margin: -6px 0 0 60px;
+}
+
+.slide .slide-change .icon {
+  color: #fff;
+}
+
+.slide .slide-change .line-left {
+  margin-right: 11px;
+}
+
+.slide .slide-change .line-right img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=welcome.css.map */

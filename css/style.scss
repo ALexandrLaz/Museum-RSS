@@ -1,0 +1,44 @@
+* {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  color: #fff;
+}
+header,
+main,
+footer {
+  max-width: 1920px;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  // border: 1px solid gray;
+}
+h2 {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.dark {
+  background-color: #030303;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@import "header/header.scss";
+@import "main/welcome.scss";
+@import "main/virtual-tour.scss";
+
+@import "footer/footer.scss"

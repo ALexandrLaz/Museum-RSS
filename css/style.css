@@ -1,0 +1,317 @@
+* {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+}
+
+header,
+main,
+footer {
+  max-width: 1920px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.dark {
+  background-color: #030303;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  height: 150px;
+  background-color: #030303;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+}
+
+.header-logo {
+  background-image: url("../../assets/svg/logo.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 18px;
+  text-transform: uppercase;
+}
+
+.header-logo h1 {
+  padding-left: 74px;
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 31px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.header-navbar {
+  width: 774px;
+}
+
+.header-navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 2px 0 0 0;
+}
+
+.header-navbar ul li a {
+  padding: 0 28px;
+  font-weight: 200;
+  line-height: 26px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-navbar ul li a:hover {
+  color: #9d8665;
+}
+
+.header-navbar ul li a:active {
+  color: #7e6c51;
+}
+
+.header-navbar ul li:last-child a {
+  padding-right: 0;
+}
+
+.header-navbar ul li:first-child a {
+  padding-left: 0;
+}
+
+.welcome {
+  position: relative;
+  height: 810px;
+}
+
+.welcome-block {
+  position: absolute;
+  top: 150px;
+  max-width: 598px;
+  max-height: 388px;
+  z-index: 3;
+}
+
+.welcome-block h2 {
+  margin: 0 0 25px 0;
+}
+
+.welcome-block p {
+  margin: 0 0 100px 0;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.welcome-block a {
+  padding: 24px 66.5px;
+  text-align: center;
+  line-height: 26px;
+  background: #710707;
+  border-radius: 10px;
+}
+
+.welcome-block a:hover {
+  background-color: #9d8665;
+}
+
+.welcome-slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  min-height: 100%;
+  background-image: url("../../assets/img/welcome-slider/1.jpg");
+  background-repeat: no-repeat;
+  background-position: calc(100%) calc(100% - 60px);
+}
+
+.welcome-slider_shadow {
+  background: none;
+  box-shadow: inset 200px -50px 140px -60px #030303;
+  z-index: 2;
+}
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 74px;
+  background-color: #030303;
+  max-width: 600px;
+  height: 120px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+}
+
+.slide .slide-count {
+  text-align: center;
+  margin: 40px auto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.slide .slide-change {
+  display: flex;
+  align-items: center;
+  margin-left: 55px;
+}
+
+.slide .slide-change .slide-block {
+  width: 16px;
+  height: 16px;
+  margin: 0 12.5px;
+  background-color: #fff;
+}
+
+.slide .slide-change .slide-block:first-child {
+  margin-left: 0;
+}
+
+.slide .slide-change .sb-last {
+  margin-right: 0;
+}
+
+.slide .slide-change .slide-line {
+  margin: -6px 0 0 60px;
+}
+
+.slide .slide-change .icon {
+  color: #fff;
+}
+
+.slide .slide-change .line-left {
+  margin-right: 11px;
+}
+
+.slide .slide-change .line-right img {
+  transform: rotate(180deg);
+}
+
+.visiting {
+  color: black;
+}
+
+.visiting h2 {
+  margin-top: 75px;
+  margin-bottom: 25px;
+  color: #9D8665;
+}
+
+.visiting hr {
+  margin-bottom: 75px;
+  height: 3px;
+  background-color: #710707;
+  border: none;
+}
+
+.visiting-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.visiting-cards .card {
+  max-width: 440px;
+  margin: 0 60px 75px 0;
+}
+
+.visiting-cards .card:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.visiting-cards .card figure {
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+}
+
+.visiting-cards .card figure h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.visiting-cards .card figure hr {
+  max-width: 300px;
+  height: 2px;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.visiting-cards .card figure figcaption {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+}
+
+.visiting-cards .card figure p {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  letter-spacing: 0px;
+}
+
+.visiting-cards .card a {
+  display: block;
+  min-height: 100%;
+  color: #000;
+}
+
+footer {
+  height: 392px;
+  background-color: #030303;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer-navbar {
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+}
+
+.footer-link ul {
+  display: flex;
+}
