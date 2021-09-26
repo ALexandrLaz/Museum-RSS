@@ -30,7 +30,7 @@
 .video-player video {
   width: 100%;
   max-height: 735px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .video-player video[poster] {
@@ -54,6 +54,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
 }
 
 .video-player .video-slidebar .oneslide {
@@ -62,5 +67,29 @@
   background: #999999;
   border: 1px solid gray;
   border-radius: 50%;
+}
+
+.video-player .video-slidebar .video-line {
+  display: block;
+  width: 10px;
+  -webkit-mask-image: url("../../assets/svg/Vector (Stroke).svg");
+          mask-image: url("../../assets/svg/Vector (Stroke).svg");
+  background-color: #999999;
+}
+
+.video-player .video-slidebar .video-line:hover {
+  cursor: pointer;
+  background-color: #710707;
+}
+
+.video-player .video-slidebar .video-line_right {
+  fill: #333;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.video-player .video-slidebar .oneslide:hover {
+  cursor: pointer;
+  background-color: #710707;
 }
 /*# sourceMappingURL=video-journey.css.map */
