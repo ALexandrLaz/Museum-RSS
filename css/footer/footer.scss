@@ -1,15 +1,82 @@
-footer{
-    height: 392px;
-    background-color: #030303;
-}
-ul{
+footer {
+  height: 392px;
+  background-color: #030303;
+  hr {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  ul {
     list-style-type: none;
+  }
+
+  .footer-container {
+    position: relative;
+    .footer-logo {
+      background-position: 0px 84px;
+    }
+
+    h2 {
+      padding-left: 74px;
+      padding-top: 62px;
+      padding-bottom: 115px;
+      font-family: "Forum";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 31px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+  }
 }
-.footer-navbar{
-    display: flex;
-    flex-direction: row;
-    text-transform: capitalize;
+.footer-navbar {
+  position: absolute;
+  top: 26%;
+  left: 20.85%;
+  display: flex;
+  flex-direction: row;
+  max-width: 363px;
+  text-transform: capitalize;
+
+  & ul:first-child {
+    margin-right: 49.5%;
+  }
+  li {
+    margin-bottom: 25px;
+    a {
+      font-weight: 200;
+      font-size: 22px;
+      line-height: 26px;
+    }
+  }
 }
-.footer-link ul{
-    display: flex;
+.footer-link ul {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+  margin-top: 145px;
+
+  li {
+    border: 2px solid #fff;
+    border-radius: 50%;
+
+    img {
+      display: block;
+    }
+  }
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+  p {
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2px;
+  }
 }

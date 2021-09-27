@@ -1,0 +1,40 @@
+.contacts {
+  color: black;
+  margin-bottom: 74px;
+}
+
+.contacts h2 {
+  color: #9d8665;
+  margin: 0;
+  padding-bottom: 25px;
+  border: none;
+  border-bottom: 3px solid #710707;
+}
+
+.contacts .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 75px;
+}
+
+.contacts .contact-info .info h3 {
+  margin-top: 0;
+  margin-bottom: 51px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 0;
+}
+
+.contacts .contact-info .info p {
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+/*# sourceMappingURL=contact.css.map */

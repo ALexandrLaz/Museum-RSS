@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main/art-gallsery.css" />
+    <link rel="stylesheet" href="css/footer/footer.css" />
     <title>Museum</title>
   </head>
   <body>
@@ -200,15 +200,102 @@
       </section>
       <section class="tickets container">
         <h2>BUY TICKETS</h2>
+        <div class="tickets-choice">
+          <img src="assets/img/Rectangle.png" alt="tickets-picture">
+          <div class="tickets-type">
+            <h3>Ticket Type</h3>
+            <label><input type="radio" name="tickets-type" id="permament" checked value="1"><span></span>Permanent exhibition</label>
+            <label><input type="radio" name="tickets-type" id="temporary" value="2"><span></span>Temporary exhibition</label>
+            <label><input type="radio" name="tickets-type" id="combined" value="3"><span></span>Combined Admission</label>
+          </div>
+          <div class="tickets-amount">
+            <h3>Amount</h3>
+            <div class="amount18">
+              <label for="basic">Basic 18+</label>
+              <button type="button" class="amount-button amount18-left" onclick="this.nextElementSibling.stepDown()">–</button>
+              <input type="number" name="basic" id="tickets-amount_basic" readonly value="0" min="0" max="20">
+              <button type="button" class="amount-button amount18-right" onclick="this.previousElementSibling.stepUp()">+</button>
+            </div>
+            <div class="amount65">
+              <label for="senior">Senior 65+</label>
+              <button type="button" class="amount-button amount65-left" onclick="this.nextElementSibling.stepDown()">–</button>
+              <input type="number" name="senior" id="tickets-amount_senior" readonly value="0" min="0" max="20">
+              <button type="button" class="amount-button amount65-right" onclick="this.previousElementSibling.stepUp()" value="+">+</button>
+            </div>
+            <h3 class="tickets-cost">Total €<span class="tickets-cost_change">220</span></h3>
+            <input type="button" value="Buy Now">
+          </div>
+        </div>
+        <div class="buy">
+          <div class="overlay"></div>
+          <div class="buy-tickets">
+            <div class="form">
+              <div class="buy-head">
+                <div class="buylogo"></div>
+                <h2>Booking tickets</h2>
+                <p>Tour to Louvre</p>
+              </div>
+              <div class="buy-form">
+                <form action="#" method="POST">
+                  <input type="date" name="" id="input-date" class="buy-form_all buy-form_50" placeholder="Date">
+                  <input type="time" name="" id="input-time" class="buy-form_all buy-form_50">
+                  <input type="text" name="" id="input-text" class="buy-form_all buy-form_100">
+                  <input type="email" name="" id="input-email" class="buy-form_all buy-form_100">
+                  <input type="tel" name="" id="input-tel" class="buy-form_all buy-form_100">
+                  <select name="" id="select-input" class="buy-form_all  buy-form_100">
+                    <option value="0">
+                    </option>
+                    <option value="1">
+                      Permanent exhibition
+                    </option>
+                    <option value="2">
+                      Temporary exhibition
+                    </option>
+                    <option value="3">
+                      Combined Admission
+                    </option>
+                  </select>
+                </form>
+              </div>
+              <div class="buy-entry">
+                <p>Entry ticket</p>
+                <label>Basic 18+ (20 €)
+                  <button type="button" class="amount-button amount65-left" onclick="this.nextElementSibling.stepDown()">–</button>
+                  <input type="number" name="senior" id="tickets-amount_senior" readonly value="0" min="0" max="20">
+                  <button type="button" class="amount-button amount65-right" onclick="this.previousElementSibling.stepUp()" value="+">+</button>
+                </label>
+                <label>Senior 65+ (10 €)
+                  <button type="button" class="amount-button amount65-left" onclick="this.nextElementSibling.stepDown()">–</button>
+                  <input type="number" name="senior" id="tickets-amount_senior" readonly value="0" min="0" max="20">
+                  <button type="button" class="amount-button amount65-right" onclick="this.previousElementSibling.stepUp()" value="+">+</button>
+                </label>
+              </div>
+            </div>
+            
+            <div class="buy-overview">
+
+            </div>
+          </div>
+        </div>
       </section>
+      <div class="paralax"></div>
       <section class="contacts container">
         <h2>Contacts</h2>
+        <div class="contact-info">
+          <div class="info">
+            <h3>Palais Royal<br> Musee du Louvre</h3>
+            <p>address: 75001 Paris, France</p>
+            <p>phone: +33(0) 1 40 20 50 50</p>
+            <p>mail: info@louvre.fr</p>
+          </div>
+          <img src="assets/img/Rectangle (2).png" class="map" alt="map">
+        </div>
       </section>
     </main>
     <footer>
       <div class="container dark">
-        <div class="header-container container">
-            <div class="header-logo"><h1>louvre</h1></div>
+        <div class="header-container footer-container">
+            <div class="header-logo footer-logo"><h2>louvre</h2></div>
             <nav class="footer-navbar">
               <ul>
                 <li><a href="">visiting</a></li>
@@ -233,9 +320,9 @@
       </div>
       <hr/>
       <div class="footer-info">
-          <p>©2021</p>
+          <p>© 2021</p>
           <p>The Rolling Scopes School</p>
-          <p><a href="https://github.com/ALexandrLaz">ALexandrLaz</a></p>
+          <p><a href="https://github.com/ALexandrLaz">Alexandr Lazar</a></p>
       </div>
     </footer>
   </body>
