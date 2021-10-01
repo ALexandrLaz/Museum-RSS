@@ -1,40 +1,39 @@
-.visiting{
+.visiting {
   color: black;
 }
-.visiting h2{
+.visiting h2 {
   margin-top: 75px;
   margin-bottom: 25px;
-  color: #9D8665;
+  color: #9d8665;
 }
-.visiting hr{
+.visiting hr {
   margin-bottom: 75px;
   height: 3px;
   background-color: #710707;
   border: none;
 }
-.visiting-cards{
+.visiting-cards {
   display: flex;
   flex-wrap: wrap;
 
-  a{
+  a {
     max-width: 440px;
     margin: 0 60px 74px 0;
     color: #000;
 
-
-    &:nth-child(3n+3){
+    &:nth-child(3n + 3) {
       margin-right: 0;
     }
   }
-  .card{
+  .card {
     width: 100%;
-    figure{
+    figure {
       margin: 0;
       font-family: "Roboto";
       font-style: normal;
       font-weight: 200;
 
-      h3{
+      h3 {
         margin-top: 20px;
         margin-bottom: 10px;
         font-family: "Forum";
@@ -46,31 +45,95 @@
         text-transform: uppercase;
       }
 
-      hr{
+      hr {
         width: 300px;
         height: 2px;
         margin-left: 0;
         margin-bottom: 10px;
       }
 
-      figcaption{
-        font-size: 22px;
-        line-height: 26px;
-        letter-spacing: 0px;
-        margin-bottom: 10px;
-      }
-      p{
+      figcaption {
         font-size: 18px;
         line-height: 21px;
         margin: 0;
         letter-spacing: 0px;
       }
+      .card-description {
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
     }
   }
-  a:hover{
-    hr{
+  a:hover {
+    hr {
       width: 100%;
       transition: 1s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .visiting h2 {
+    margin-top: 53px;
+    margin-bottom: 12px;
+  }
+  .visiting hr {
+    margin-bottom: 60px;
+  }
+  .visiting-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    & a:nth-child(3) h3 {
+      letter-spacing: 3px;
+    }
+    & a:nth-child(5) h3,
+    & a:nth-child(6) h3 {
+      letter-spacing: 3px;
+    }
+
+    a {
+      max-width: 330px;
+      margin: 0 0 60px 108px;
+
+      &:nth-child(3n + 3) {
+        margin: 0 0 60px 108px;
+      }
+    }
+    .card {
+      figure {
+        img {
+          max-width: 330px;
+        }
+        h3 {
+          font-size: 28px;
+          line-height: 31px;
+          white-space: nowrap;
+        }
+
+        hr {
+          width: 150px;
+          height: 2px;
+        }
+
+        figcaption {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        .card-description {
+          font-size: 20px;
+          line-height: 23px;
+        }
+      }
+    }
+    a:hover {
+      hr {
+        width: 100%;
+        transition: 1s ease-in-out;
+      }
     }
   }
 }

@@ -31,12 +31,53 @@
 }
 
 .explore-info p span {
-  color: #CAAA7D;
+  color: #caaa7d;
   letter-spacing: 0;
 }
 
 .explore-picture {
   max-width: 720px;
   margin: 90px 0 75px 0;
+}
+
+@media (max-width: 1024px) {
+  .explore {
+    max-height: 1149px;
+  }
+  .explore-cont {
+    display: block;
+  }
+  .explore-info {
+    max-width: 100%;
+  }
+  .explore-info h2 {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding-top: 53px;
+    padding-bottom: 12px;
+  }
+  .explore-info p {
+    margin: 0px;
+    font-size: 20px;
+  }
+  .explore-info p span {
+    color: #caaa7d;
+    letter-spacing: -0.8px;
+  }
+  .explore-info .hide1024 {
+    display: none;
+  }
+  .explore-info .adapt1024 {
+    line-height: 35px;
+  }
+  .explore-picture {
+    max-width: 720px;
+    margin: 62px auto 0;
+    padding-bottom: 62px;
+  }
+  .explore-picture img {
+    display: block;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=picture-explore.css.map */

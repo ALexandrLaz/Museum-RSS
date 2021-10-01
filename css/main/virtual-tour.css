@@ -5,7 +5,7 @@
 .visiting h2 {
   margin-top: 75px;
   margin-bottom: 25px;
-  color: #9D8665;
+  color: #9d8665;
 }
 
 .visiting hr {
@@ -29,7 +29,7 @@
   color: #000;
 }
 
-.visiting-cards a:nth-child(3n+3) {
+.visiting-cards a:nth-child(3n + 3) {
   margin-right: 0;
 }
 
@@ -64,22 +64,79 @@
 }
 
 .visiting-cards .card figure figcaption {
-  font-size: 22px;
-  line-height: 26px;
-  letter-spacing: 0px;
-  margin-bottom: 10px;
-}
-
-.visiting-cards .card figure p {
   font-size: 18px;
   line-height: 21px;
   margin: 0;
   letter-spacing: 0px;
 }
 
+.visiting-cards .card figure .card-description {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
 .visiting-cards a:hover hr {
   width: 100%;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+  .visiting h2 {
+    margin-top: 53px;
+    margin-bottom: 12px;
+  }
+  .visiting hr {
+    margin-bottom: 60px;
+  }
+  .visiting-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .visiting-cards a:nth-child(3) h3 {
+    letter-spacing: 3px;
+  }
+  .visiting-cards a:nth-child(5) h3,
+  .visiting-cards a:nth-child(6) h3 {
+    letter-spacing: 3px;
+  }
+  .visiting-cards a {
+    max-width: 330px;
+    margin: 0 0 60px 108px;
+  }
+  .visiting-cards a:nth-child(3n + 3) {
+    margin: 0 0 60px 108px;
+  }
+  .visiting-cards .card figure img {
+    max-width: 330px;
+  }
+  .visiting-cards .card figure h3 {
+    font-size: 28px;
+    line-height: 31px;
+    white-space: nowrap;
+  }
+  .visiting-cards .card figure hr {
+    width: 150px;
+    height: 2px;
+  }
+  .visiting-cards .card figure figcaption {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .visiting-cards .card figure .card-description {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .visiting-cards a:hover hr {
+    width: 100%;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
 }
 /*# sourceMappingURL=virtual-tour.css.map */

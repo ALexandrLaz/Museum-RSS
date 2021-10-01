@@ -167,10 +167,18 @@
   }
 
   .buy {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: none;
-    width: 100%;
-    height: 100%;
 
+    .overlay {
+      background-color: lightgray;
+      width: 100%;
+      min-height: 100%;
+      opacity: 0.2;
+      z-index: 4;
+    }
     .buy-tickets {
       width: 100%;
 
@@ -181,7 +189,7 @@
           display: block;
           width: 85px;
           height: 45px;
-          mask-image: url("../../assets/svg/logo.svg");
+          mask-image: url("../assets/svg/logo.svg");
           mask-size: 100%;
           background-color: #9d8665;
         }
@@ -244,7 +252,7 @@
             font-size: 18px;
             line-height: 21px;
             text-align: center;
-            background-image: url("../../assets/svg/date.svg");
+            background-image: url("../assets/svg/date.svg");
 
             &::after {
               content: "Date";
@@ -269,5 +277,185 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../assets/img/parallax.jpg);
+  background-image: url("../assets/img/parallax.jpg");
+}
+
+@media (max-width: 1024px) {
+  .tickets {
+    h2 {
+      margin-top: 53px;
+      padding-bottom: 12px;
+      margin-bottom: 60px;
+    }
+
+    .tickets-choice {
+      min-height: 440px;
+      img {
+        display: none;
+      }
+
+      .img-cont {
+        display: block;
+        min-width: 700px;
+        max-height: 440px;
+        background-image: url("../assets/img/Rectangle.png");
+        background-repeat: no-repeat;
+        background-position: -10px -55px;
+      }
+
+      .tickets-type {
+        display: none;
+      }
+      .tickets-amount {
+        max-width: 175px;
+        margin-left: 80px;
+
+        h3:first-child {
+          float: left;
+          margin-bottom: 30px;
+        }
+        label {
+          position: absolute;
+        }
+        input[type="number"] {
+          width: 175px;
+          margin: 35px 0 30px;
+        }
+        .amount18-left {
+          top: 105px;
+          left: 8px;
+        }
+        .amount18-right {
+          top: 105px;
+          right: 10px;
+        }
+        .amount65-left {
+          top: 42px;
+          left: 8px;
+        }
+        .amount65-right {
+          top: 42px;
+          right: 10px;
+        }
+      }
+
+      .tickets-cost {
+        margin-top: -5px;
+        margin-bottom: 67px;
+        .tickets-cost_change {
+          margin-left: 16px;
+        }
+      }
+      & input[type="button"] {
+        margin-left: 0px;
+      }
+    }
+
+    .buy {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: none;
+
+      .overlay {
+        background-color: lightgray;
+        width: 100%;
+        min-height: 100%;
+        opacity: 0.2;
+        z-index: 4;
+      }
+      .buy-tickets {
+        width: 100%;
+
+        .form {
+          position: relative;
+          max-width: 400px;
+          .buylogo {
+            display: block;
+            width: 85px;
+            height: 45px;
+            mask-image: url("../assets/svg/logo.svg");
+            mask-size: 100%;
+            background-color: #9d8665;
+          }
+          h2 {
+            white-space: nowrap;
+            margin: 0 0 15px;
+            padding-bottom: 45px;
+            font-size: 50px;
+            line-height: 55px;
+            text-transform: uppercase;
+            letter-spacing: 0;
+          }
+          .buy-head p {
+            position: absolute;
+            top: 96px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: #710707;
+            letter-spacing: 0;
+          }
+
+          .buy-form {
+            margin-top: 60px;
+            .buy-form_all {
+              position: relative;
+              border: 1px solid black;
+              height: 45px;
+              margin-bottom: 20px;
+
+              &::-webkit-datetime-edit {
+                display: none;
+              }
+              &::-webkit-calendar-picker-indicator {
+                opacity: 0;
+              }
+            }
+            .buy-form_50 {
+              width: 190px;
+
+              &:first-child {
+                margin-right: 12.65px;
+              }
+            }
+            .buy-form_100 {
+              width: 100%;
+            }
+            #input-date[placeholder] {
+              color: black;
+            }
+            #input-date:before {
+              content: "";
+              position: absolute;
+              left: 17px;
+              top: 14px;
+              width: 13px;
+              height: 15px;
+              font-size: 18px;
+              line-height: 21px;
+              text-align: center;
+              background-image: url("../assets/svg/date.svg");
+
+              &::after {
+                content: "Date";
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .buy-tickets {
+    }
+  }
+
+  .paralax {
+    margin-top: 60px;
+    margin-bottom: 53px;
+  }
 }

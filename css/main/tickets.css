@@ -179,9 +179,18 @@
 }
 
 .tickets .buy {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: none;
+}
+
+.tickets .buy .overlay {
+  background-color: lightgray;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  opacity: 0.2;
+  z-index: 4;
 }
 
 .tickets .buy .buy-tickets {
@@ -197,8 +206,8 @@
   display: block;
   width: 85px;
   height: 45px;
-  -webkit-mask-image: url("../../assets/svg/logo.svg");
-          mask-image: url("../../assets/svg/logo.svg");
+  -webkit-mask-image: url("../assets/svg/logo.svg");
+          mask-image: url("../assets/svg/logo.svg");
   -webkit-mask-size: 100%;
           mask-size: 100%;
   background-color: #9d8665;
@@ -271,7 +280,7 @@
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  background-image: url("../../assets/svg/date.svg");
+  background-image: url("../assets/svg/date.svg");
 }
 
 .tickets .buy .buy-tickets .form .buy-form #input-date:before::after {
@@ -289,6 +298,170 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../assets/img/parallax.jpg);
+  background-image: url("../assets/img/parallax.jpg");
+}
+
+@media (max-width: 1024px) {
+  .tickets h2 {
+    margin-top: 53px;
+    padding-bottom: 12px;
+    margin-bottom: 60px;
+  }
+  .tickets .tickets-choice {
+    min-height: 440px;
+  }
+  .tickets .tickets-choice img {
+    display: none;
+  }
+  .tickets .tickets-choice .img-cont {
+    display: block;
+    min-width: 700px;
+    max-height: 440px;
+    background-image: url("../assets/img/Rectangle.png");
+    background-repeat: no-repeat;
+    background-position: -10px -55px;
+  }
+  .tickets .tickets-choice .tickets-type {
+    display: none;
+  }
+  .tickets .tickets-choice .tickets-amount {
+    max-width: 175px;
+    margin-left: 80px;
+  }
+  .tickets .tickets-choice .tickets-amount h3:first-child {
+    float: left;
+    margin-bottom: 30px;
+  }
+  .tickets .tickets-choice .tickets-amount label {
+    position: absolute;
+  }
+  .tickets .tickets-choice .tickets-amount input[type="number"] {
+    width: 175px;
+    margin: 35px 0 30px;
+  }
+  .tickets .tickets-choice .tickets-amount .amount18-left {
+    top: 105px;
+    left: 8px;
+  }
+  .tickets .tickets-choice .tickets-amount .amount18-right {
+    top: 105px;
+    right: 10px;
+  }
+  .tickets .tickets-choice .tickets-amount .amount65-left {
+    top: 42px;
+    left: 8px;
+  }
+  .tickets .tickets-choice .tickets-amount .amount65-right {
+    top: 42px;
+    right: 10px;
+  }
+  .tickets .tickets-choice .tickets-cost {
+    margin-top: -5px;
+    margin-bottom: 67px;
+  }
+  .tickets .tickets-choice .tickets-cost .tickets-cost_change {
+    margin-left: 16px;
+  }
+  .tickets .tickets-choice input[type="button"] {
+    margin-left: 0px;
+  }
+  .tickets .buy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .tickets .buy .overlay {
+    background-color: lightgray;
+    width: 100%;
+    min-height: 100%;
+    opacity: 0.2;
+    z-index: 4;
+  }
+  .tickets .buy .buy-tickets {
+    width: 100%;
+  }
+  .tickets .buy .buy-tickets .form {
+    position: relative;
+    max-width: 400px;
+  }
+  .tickets .buy .buy-tickets .form .buylogo {
+    display: block;
+    width: 85px;
+    height: 45px;
+    -webkit-mask-image: url("../assets/svg/logo.svg");
+            mask-image: url("../assets/svg/logo.svg");
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
+    background-color: #9d8665;
+  }
+  .tickets .buy .buy-tickets .form h2 {
+    white-space: nowrap;
+    margin: 0 0 15px;
+    padding-bottom: 45px;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+  .tickets .buy .buy-tickets .form .buy-head p {
+    position: absolute;
+    top: 96px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #710707;
+    letter-spacing: 0;
+  }
+  .tickets .buy .buy-tickets .form .buy-form {
+    margin-top: 60px;
+  }
+  .tickets .buy .buy-tickets .form .buy-form .buy-form_all {
+    position: relative;
+    border: 1px solid black;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  .tickets .buy .buy-tickets .form .buy-form .buy-form_all::-webkit-datetime-edit {
+    display: none;
+  }
+  .tickets .buy .buy-tickets .form .buy-form .buy-form_all::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  .tickets .buy .buy-tickets .form .buy-form .buy-form_50 {
+    width: 190px;
+  }
+  .tickets .buy .buy-tickets .form .buy-form .buy-form_50:first-child {
+    margin-right: 12.65px;
+  }
+  .tickets .buy .buy-tickets .form .buy-form .buy-form_100 {
+    width: 100%;
+  }
+  .tickets .buy .buy-tickets .form .buy-form #input-date[placeholder] {
+    color: black;
+  }
+  .tickets .buy .buy-tickets .form .buy-form #input-date:before {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 14px;
+    width: 13px;
+    height: 15px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    background-image: url("../assets/svg/date.svg");
+  }
+  .tickets .buy .buy-tickets .form .buy-form #input-date:before::after {
+    content: "Date";
+    width: 30px;
+    height: 30px;
+  }
+  .paralax {
+    margin-top: 60px;
+    margin-bottom: 53px;
+  }
 }
 /*# sourceMappingURL=tickets.css.map */
